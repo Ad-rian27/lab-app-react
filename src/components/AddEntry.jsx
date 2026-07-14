@@ -56,13 +56,25 @@ const AddEntry = () => {
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                                 <label htmlFor="" className="form-label">Department</label>
-                                <input type="text" name='dept' value={input.dept} onChange={inputHandler} className="form-control" />
+                                <select name="dept" id="" className="form-control" value={input.dept} onChange={inputHandler}>
+                                    <option value="BTech">BTech</option>
+                                    <option value="MCA">MCA</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="MSc">MSc</option>
+                                </select>
 
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                                 <label htmlFor="" className="form-label">Semester</label>
-                                <input type="number" name='sem' value={input.sem} onChange={inputHandler} className="form-control" required />
+                                <select name="sem" id="" className="form-control" value={input.sem} onChange={inputHandler}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
 
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
