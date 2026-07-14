@@ -57,6 +57,7 @@ const AddEntry = () => {
 
                                 <label htmlFor="" className="form-label">Department</label>
                                 <select name="dept" id="" className="form-control" value={input.dept} onChange={inputHandler}>
+                                    <option value="">Select an Option</option>
                                     <option value="BTech">BTech</option>
                                     <option value="MCA">MCA</option>
                                     <option value="MBA">MBA</option>
@@ -68,6 +69,7 @@ const AddEntry = () => {
 
                                 <label htmlFor="" className="form-label">Semester</label>
                                 <select name="sem" id="" className="form-control" value={input.sem} onChange={inputHandler}>
+                                    <option value="">Select an Option</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -80,7 +82,13 @@ const AddEntry = () => {
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                                 <label htmlFor="" className="form-label">Course</label>
-                                <input type="text" name='course' value={input.course} onChange={inputHandler} className="form-control" required />
+                                <select name="course" id="" className="form-control" value={input.course} onChange={inputHandler}>
+                                    <option value="">Select an Option</option>
+                                    <option value="ADBMS">ADBMS</option>
+                                    <option value="DS">DS</option>
+                                    <option value="Web">Web</option>
+    
+                                </select>
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
